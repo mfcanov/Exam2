@@ -1,0 +1,19 @@
+#include <iostream>
+
+ using namespace std;
+
+ int superpower (int a, int b){
+   int num=1 ;
+   for (int i=1;i<=b;i+=1){
+     num=num*a;
+   }
+  return num;
+ }
+
+ int main (){
+   int a,b;
+   cout<< "This program shows a number elevated to a power that the user provided"<< endl << "insert the number and the power please"<<endl;
+   cin>>a>>b;
+   cout << "the result is: "<< superpower(a,b) << endl;
+   return 0;
+ }
